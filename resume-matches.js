@@ -14,6 +14,8 @@ window.ROLEBOARD_MATCHES = {
   "thinkly-forward-deployed-intern": [61, "Evidence: prompt iteration, backend debugging and requirements ownership help. Gap: no voice AI, telephony, live-call debugging or client-deployment track record."],
   "craftech360-fullstack-intern": [76, "Evidence: React, JavaScript, APIs and multiple shipped database-backed apps align. Gap: Node.js experience is not listed."],
   "flexday-ai-engineering-intern": [60, "Evidence: prompt engineering and API automation testing are relevant. Gap: no formal hallucination testing, LLM regression suite or evaluation-dataset ownership."],
+  "mynaksh-data-analyst-intern": [67, "Evidence: Python, SQL, MySQL and data-backed product work are relevant. Gap: Excel or Google Sheets, Pandas or NumPy, Power BI or Tableau and a dedicated analytics portfolio are not shown."],
+  "h2loop-ai-engineer-intern": [63, "Evidence: JavaScript, React, AI systems and end-to-end product delivery are relevant. Gap: TypeScript at large-codebase scale, SolidJS, MCP servers and sustained coding-agent workflows are not demonstrated."],
   "growth99-ai-java-intern": [48, "Evidence: AI workflow and backend experience are useful. Gap: Java—the role's primary language—is not on the resume."],
   "raptee-go-intern": [38, "Evidence: backend and systems fundamentals transfer. Gap: no Go, production concurrency, networking or distributed-systems delivery."],
   "fancode-backend-intern": [65, "Evidence: DSA, REST, databases and backend project work are relevant. Gap: large-scale production systems are not shown and semester eligibility needs confirmation."],

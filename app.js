@@ -1,6 +1,14 @@
 const data = window.ROLEBOARD_DATA;
 const stages = ["Not Started", "Applied", "OA/Assignment", "Interview", "Offer", "Rejected", "Withdrawn", "Closed"];
 const resumeAssessments = window.ROLEBOARD_MATCHES || {};
+const MAX_LISTING_AGE_DAYS = 7;
+const isRecent = (postedOn, now = new Date()) => {
+  const posted = new Date(`${postedOn}T00:00:00`);
+  const cutoff = new Date(now.getFullYear(), now.getMonth(), now.getDate() - MAX_LISTING_AGE_DAYS);
+  return Number.isFinite(posted.getTime()) && posted <= now && posted >= cutoff;
+};
+console.assert(isRecent("2026-09-03", new Date("2026-09-03T12:00:00")) && !isRecent("2026-08-26", new Date("2026-09-03T12:00:00")), "Roleboard freshness rule failed");
+data.jobs = data.jobs.filter((job) => isRecent(job.postedOn));
 data.jobs.forEach((job) => { const assessment = resumeAssessments[job.id]; if (assessment) [job.match, job.fit] = assessment; });
 const saved = JSON.parse(localStorage.getItem("roleboard-progress-v1") || "{}");
 let expandedId = null;
@@ -35,12 +43,12 @@ function jobTemplate(job) {
       <div class="job-cell" data-label="Type"><span class="type-tag">${esc(job.type)}</span></div>
       <div class="job-cell location" data-label="Location"><span>${esc(job.location)}</span><span class="subtle">${esc(job.mode)}</span></div>
       <div class="job-cell pay" data-label="Pay">${esc(job.pay)}</div>
-      <div class="job-cell deadline${job.urgent ? " urgent-date" : ""}" data-label="Deadline">${esc(job.deadline)}</div>
+      <div class="job-cell deadline${job.urgent ? " urgent-date" : ""}" data-label="Freshness"><span>${esc(job.posted)}</span><span class="subtle">${esc(job.deadline)}</span></div>
       <div class="job-cell" data-label="Stage"><select class="stage-select" aria-label="Stage for ${esc(job.company)} ${esc(job.role)}">${stages.map((stage) => `<option ${p.stage === stage ? "selected" : ""}>${stage}</option>`).join("")}</select></div>
       <div class="job-cell match-cell ${matchClass}" data-label="Resume match"><span class="match-score">${esc(job.match)}%</span><span class="match-label">${matchLabel}</span><button class="details-button" aria-expanded="${expanded}">${expanded ? "Hide" : "View"}</button></div>
     </div>
     <div class="job-details">
-      <div><h3>About the role</h3><p>${esc(job.about)}</p><p class="subtle">Eligibility: ${esc(job.eligibility)} · Confidence: ${esc(job.confidence)}</p></div>
+      <div><h3>About the role</h3><p>${esc(job.about)}</p><p class="subtle">Posted: ${esc(job.posted)} · Eligibility: ${esc(job.eligibility)} · Confidence: ${esc(job.confidence)}</p></div>
       <div class="fit"><h3>Resume match · ${esc(job.match)}% (${matchLabel})</h3><div class="match-bar" aria-label="${esc(job.match)} percent resume match"><span style="width:${esc(job.match)}%"></span></div><p>${esc(job.fit)}</p></div>
       <div class="detail-actions"><a class="primary-link" href="${esc(job.apply)}" target="_blank" rel="noreferrer">Apply ↗</a><a class="secondary-link" href="${esc(job.source)}" target="_blank" rel="noreferrer">Source ↗</a></div>
       <div class="meta-grid">
@@ -77,6 +85,7 @@ function renderWatchlist() {
 
 $("#stage-filter").insertAdjacentHTML("beforeend", stages.map((stage) => `<option>${stage}</option>`).join(""));
 $("#updated").textContent = `Last researched ${data.updated}`;
+$("#freshness-rule").textContent = `Hard rule: dated within ${MAX_LISTING_AGE_DAYS} days with an open application or future deadline. Older, undated or closed openings are excluded.`;
 
 document.addEventListener("change", (event) => {
   const jobEl = event.target.closest(".job");
