@@ -10,7 +10,7 @@ window.ROLEBOARD_MATCHES = {
   "kreeda-ai-ml-intern": [82, "Evidence: Python, PyTorch, scikit-learn, RAG and ML API work match well. Gap: no TensorFlow or production vector-database implementation is shown."],
   "thinkly-forward-deployed-intern": [61, "Evidence: prompt iteration, backend debugging and requirements ownership help. Gap: no voice AI, telephony, live-call debugging or client-deployment track record."],
   "craftech360-fullstack-intern": [76, "Evidence: React, JavaScript, APIs and multiple shipped database-backed apps align. Gap: Node.js experience is not listed."],
-  "h2loop-ai-engineer-intern": [63, "Evidence: JavaScript, React, AI systems and end-to-end product delivery are relevant. Gap: TypeScript at large-codebase scale, SolidJS, MCP servers and sustained coding-agent workflows are not demonstrated."],
+  "interview-kickstart-backend-intern": [87, "Evidence: Python, Django/DRF, REST APIs, SQL, Git, DSA and several end-to-end shipped backends directly match the core role. Gap: the resume does not demonstrate production monitoring, incident triage, code-review ownership, systematic unit/integration testing or the optional Next.js/jQuery stack."],
   "growth99-ai-java-intern": [48, "Evidence: AI workflow and backend experience are useful. Gap: Java—the role's primary language—is not on the resume."],
   "raptee-go-intern": [38, "Evidence: backend and systems fundamentals transfer. Gap: no Go, production concurrency, networking or distributed-systems delivery."],
   "fancode-backend-intern": [65, "Evidence: DSA, REST, databases and backend project work are relevant. Gap: large-scale production systems are not shown and semester eligibility needs confirmation."],
