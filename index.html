@@ -66,8 +66,15 @@
     </main>
 
     <footer>Your progress is saved on this device.</footer>
-    <script src="jobs.js"></script>
-    <script src="resume-matches.js"></script>
-    <script src="app.js"></script>
+    <script>
+      const loadScript = (src) => new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = `${src}?v=${Date.now()}`;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+      loadScript("jobs.js").then(() => loadScript("resume-matches.js")).then(() => loadScript("app.js"));
+    </script>
   </body>
 </html>
