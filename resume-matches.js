@@ -1,5 +1,8 @@
 // Conservative, resume-evidence-only assessments. Scores are not hiring probabilities.
 window.ROLEBOARD_MATCHES = {
+  "stripe-software-engineer-intern-2027": [76, "Evidence: Python, JavaScript, React, backend projects and a software internship show the CS and practical-building base Stripe asks for. Gap: the resume does not show Ruby, Java, Go or Scala, formal open-source pull requests, or production work at Stripe's scale."],
+  "microsoft-software-engineering-intern-2027": [78, "Evidence: Python, C++, OOP, DSA, SQL, APIs and multiple shipped applications align with the stated fundamentals. Gap: no large-team codebase, C#/Java work, or evidence of formal software-testing depth is shown."],
+  "symphonyai-apprentice-software-engineer-2027": [61, "Evidence: Python, SQL/MySQL, JavaScript, REST APIs, Docker and AI work are useful for the apprenticeship. Gap: .NET/C#, Angular, Azure, SQL Server/Snowflake and production ETL or analytics experience are not on the resume."],
   "razorpay-ai-builder-2026": [82, "Evidence: shipped RAG, prompt-engineering and full-stack systems. Gap: no demonstrated production agent framework or large-scale AI ownership."],
   "truefoundry-backend-intern": [72, "Evidence: Python backends, APIs, Docker, AWS and CI/CD. Gap: no Kubernetes, ML-platform or internal developer-platform delivery shown."],
   "ecl-fullstack-intern-2027": [86, "Evidence: Django/DRF, React, SQL databases, AWS and shipped business software closely match. Gap: TypeScript and fintech/lending experience are not demonstrated."],
@@ -10,13 +13,10 @@ window.ROLEBOARD_MATCHES = {
   "kreeda-ai-ml-intern": [82, "Evidence: Python, PyTorch, scikit-learn, RAG and ML API work match well. Gap: no TensorFlow or production vector-database implementation is shown."],
   "thinkly-forward-deployed-intern": [61, "Evidence: prompt iteration, backend debugging and requirements ownership help. Gap: no voice AI, telephony, live-call debugging or client-deployment track record."],
   "craftech360-fullstack-intern": [76, "Evidence: React, JavaScript, APIs and multiple shipped database-backed apps align. Gap: Node.js experience is not listed."],
-  "interview-kickstart-backend-intern": [87, "Evidence: Python, Django/DRF, REST APIs, SQL, Git, DSA and several end-to-end shipped backends directly match the core role. Gap: the resume does not demonstrate production monitoring, incident triage, code-review ownership, systematic unit/integration testing or the optional Next.js/jQuery stack."],
   "growth99-ai-java-intern": [48, "Evidence: AI workflow and backend experience are useful. Gap: Java—the role's primary language—is not on the resume."],
   "raptee-go-intern": [38, "Evidence: backend and systems fundamentals transfer. Gap: no Go, production concurrency, networking or distributed-systems delivery."],
   "fancode-backend-intern": [65, "Evidence: DSA, REST, databases and backend project work are relevant. Gap: large-scale production systems are not shown and semester eligibility needs confirmation."],
   "fancode-devops-intern": [52, "Evidence: Docker, AWS, CI/CD and cloud certifications create a base. Gap: no production Kubernetes, Terraform, observability or infrastructure operations."],
-  "weekday-swe-intern": [74, "Evidence: Python, JavaScript, C++, DSA and several shipped applications meet the broad requirements. Gap: the client, exact stack and engineering scope are undisclosed."],
-  "pearson-payroll-frontend-intern": [79, "Evidence: React, JavaScript, HTML/CSS and REST integrations are demonstrated. Gap: TypeScript, SPFx, Microsoft Graph and Azure frontend delivery are not shown."],
   "actionpackd-swe-intern": [76, "Evidence: Python/C++, APIs, databases, Git and shipped projects match the generalist role. Gap: TypeScript and formal code-review/open-source evidence are limited."],
   "gnani-fullstack-ai-intern": [78, "Evidence: React, Python/FastAPI, RAG and end-to-end product delivery are relevant. Gap: no Node.js, TypeScript, voice-agent or million-user scale evidence."],
 };
