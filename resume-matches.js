@@ -1,8 +1,5 @@
 // Conservative, resume-evidence-only assessments. Scores are not hiring probabilities.
 window.ROLEBOARD_MATCHES = {
-  "stripe-software-engineer-intern-2027": [76, "Evidence: Python, JavaScript, React, backend projects and a software internship show the CS and practical-building base Stripe asks for. Gap: the resume does not show Ruby, Java, Go or Scala, formal open-source pull requests, or production work at Stripe's scale."],
-  "microsoft-software-engineering-intern-2027": [78, "Evidence: Python, C++, OOP, DSA, SQL, APIs and multiple shipped applications align with the stated fundamentals. Gap: no large-team codebase, C#/Java work, or evidence of formal software-testing depth is shown."],
-  "symphonyai-apprentice-software-engineer-2027": [61, "Evidence: Python, SQL/MySQL, JavaScript, REST APIs, Docker and AI work are useful for the apprenticeship. Gap: .NET/C#, Angular, Azure, SQL Server/Snowflake and production ETL or analytics experience are not on the resume."],
   "razorpay-ai-builder-2026": [82, "Evidence: shipped RAG, prompt-engineering and full-stack systems. Gap: no demonstrated production agent framework or large-scale AI ownership."],
   "truefoundry-backend-intern": [72, "Evidence: Python backends, APIs, Docker, AWS and CI/CD. Gap: no Kubernetes, ML-platform or internal developer-platform delivery shown."],
   "ecl-fullstack-intern-2027": [86, "Evidence: Django/DRF, React, SQL databases, AWS and shipped business software closely match. Gap: TypeScript and fintech/lending experience are not demonstrated."],
