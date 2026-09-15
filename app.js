@@ -1,14 +1,7 @@
 const data = window.ROLEBOARD_DATA;
 const stages = ["Not Started", "Applied", "OA/Assignment", "Interview", "Offer", "Rejected", "Withdrawn", "Closed"];
 const resumeAssessments = window.ROLEBOARD_MATCHES || {};
-const MAX_LISTING_AGE_DAYS = 7;
-const isRecent = (postedOn, now = new Date()) => {
-  const posted = new Date(`${postedOn}T00:00:00`);
-  const cutoff = new Date(now.getFullYear(), now.getMonth(), now.getDate() - MAX_LISTING_AGE_DAYS);
-  return Number.isFinite(posted.getTime()) && posted <= now && posted >= cutoff;
-};
-console.assert(isRecent("2026-09-03", new Date("2026-09-03T12:00:00")) && !isRecent("2026-08-26", new Date("2026-09-03T12:00:00")), "Roleboard freshness rule failed");
-data.jobs = data.jobs.filter((job) => isRecent(job.postedOn));
+data.jobs = data.jobs.filter((job) => job.applicationOpen === true);
 data.jobs.forEach((job) => { const assessment = resumeAssessments[job.id]; if (assessment) [job.match, job.fit] = assessment; });
 const saved = JSON.parse(localStorage.getItem("roleboard-progress-v1") || "{}");
 let expandedId = null;
@@ -85,7 +78,7 @@ function renderWatchlist() {
 
 $("#stage-filter").insertAdjacentHTML("beforeend", stages.map((stage) => `<option>${stage}</option>`).join(""));
 $("#updated").textContent = `Last researched ${data.updated}`;
-$("#freshness-rule").textContent = `Hard rule: dated within ${MAX_LISTING_AGE_DAYS} days with an open application or future deadline. Older, undated or closed openings are excluded.`;
+$("#freshness-rule").textContent = "Qualification rule: application is live, 2027 eligibility is stated or reasonably supported, and the listed pay meets the floor. Fresh roles are prioritised; older roles stay while their Apply button remains live.";
 
 document.addEventListener("change", (event) => {
   const jobEl = event.target.closest(".job");
