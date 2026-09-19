@@ -1,6 +1,5 @@
 // Conservative, resume-evidence-only assessments. Scores are not hiring probabilities.
 window.ROLEBOARD_MATCHES = {
-  "ixigo-fullstack-intern-b2b-2026": [61, "Evidence: Python, FastAPI, React, SQL, Docker, CI/CD, an operations dashboard and shipped backend projects support the general engineering work; the resume lists PostgreSQL, Redis and AWS but does not demonstrate their use in these projects. Gap: no resume evidence of Voice AI, STT/TTS, TypeScript, Node.js, Flask, queue/retry scheduling or Kubernetes/EKS; several are central to this JD."],
   "razorpay-ai-builder-2026": [82, "Evidence: shipped RAG, prompt-engineering and full-stack systems. Gap: no demonstrated production agent framework or large-scale AI ownership."],
   "ecl-fullstack-intern-2027": [86, "Evidence: Django/DRF, React, SQL databases, AWS and shipped business software closely match. Gap: TypeScript and fintech/lending experience are not demonstrated."],
   "teal-ai-ml-intern": [83, "Evidence: RAG, NLP, PyTorch and ML API work are directly relevant. Gap: no shipped OCR, entity resolution, BERT fine-tuning, embedding search or reranking system."],
