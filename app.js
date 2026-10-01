@@ -78,7 +78,7 @@ function renderWatchlist() {
 
 $("#stage-filter").insertAdjacentHTML("beforeend", stages.map((stage) => `<option>${stage}</option>`).join(""));
 $("#updated").textContent = `Last researched ${data.updated}`;
-$("#freshness-rule").textContent = "Qualification rule: application is live, 2027 eligibility is stated or reasonably supported, and the listed pay meets the floor. Fresh roles are prioritised; older roles stay while their Apply button remains live.";
+$("#freshness-rule").textContent = "Qualification rule: application is live, 2027 eligibility is stated or reasonably supported, and the opening is recent. Compensation is shown when available but is not a filter.";
 
 document.addEventListener("change", (event) => {
   const jobEl = event.target.closest(".job");

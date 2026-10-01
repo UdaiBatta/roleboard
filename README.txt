@@ -13,7 +13,7 @@ Filters:
 - Show urgent roles only
 - See a 0–100% resume-match score and the reason for it on every role
 
-Thresholds:
-- Internship: at least ₹30,000 per month
-- Full-time: at least ₹8 LPA
-- Eligibility: May 2027 CS graduate in India
+Qualification:
+- Application is live or has a future deadline
+- Opening is recent and 2027 eligibility is stated or reasonably supported
+- Compensation is shown when available, but is informational only
