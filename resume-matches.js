@@ -1,5 +1,6 @@
 // Conservative, resume-evidence-only assessments. Scores are not hiring probabilities.
 window.ROLEBOARD_MATCHES = {
+  "appscrip-python-backend-intern-2026": [88, "Evidence: FastAPI, Python, PostgreSQL, REST APIs, Redis, Celery, Docker and shipped back-end projects are directly evidenced. Gap: vector databases are not demonstrated; the role is Bengaluru on-site and the listed pay is modest."],
   "infilect-fullstack-intern-2027": [89, "Evidence: Python, Django/DRF, React/TypeScript, SQL/PostgreSQL, REST APIs, GenAI/RAG, Docker and deployed dashboard work are directly evidenced. Gap: Celery/Redis depth and employer-confirmed compensation are not evidenced; the role is Bengaluru on-site."],
   "razorpay-ai-builder-2026": [82, "Evidence: shipped RAG, prompt-engineering and full-stack systems. Gap: no demonstrated production agent framework or large-scale AI ownership."],
   "ecl-fullstack-intern-2027": [86, "Evidence: Django/DRF, React, SQL databases, AWS and shipped business software closely match. Gap: TypeScript and fintech/lending experience are not demonstrated."],
