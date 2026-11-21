@@ -1,6 +1,5 @@
 // Conservative, resume-evidence-only assessments. Scores are not hiring probabilities.
 window.ROLEBOARD_MATCHES = {
-  "enveu-full-stack-software-engineering-intern-4489239670": [57, "Evidence: React, JavaScript, SQL, API development, testing and shipped application projects support the general full-stack responsibilities. Gap: the JD's Java/Spring Boot, Angular and TypeScript stack is not demonstrated; May 2027 eligibility is not explicit, and pay and duration are undisclosed."],
   "atidan-software-trainee-4490705067": [65, "Evidence: Python, C++, JavaScript, SQL, software projects, debugging and testing provide relevant programming and delivery evidence. Gap: the required 80% academic threshold cannot be verified from the resume; exact languages/frameworks, pay and work mode are not stated."],
 
   "aleph-technologies-sde-intern-full-stack-ai-4490204903": [84, "Evidence: Python, FastAPI, REST APIs, SQL, React, LLM/RAG applications, testing, Git and end-to-end delivered systems align with most stated must-haves and several preferred skills. Gap: simulation, optimisation, queueing/operations research and TypeScript are not evidenced; six-month full-time availability from December through the May 2027 graduation period needs confirmation."],
