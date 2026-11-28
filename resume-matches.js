@@ -1,3 +1,5 @@
 // Conservative, resume-evidence-only assessments. Scores are not hiring probabilities.
 window.ROLEBOARD_MATCHES = {
+  "honeywell-intern-bachelors-software-eng-161639": [76, "Evidence: B.E. Computer Engineering student expected May 2027; Python and C++; DSA/OOP; software-engineering internship and shipped projects; REST/API testing and debugging provide direct evidence for general software development and collaboration. Gap: the JD does not name a project stack or internship dates, the 2027 graduation batch is not explicit, stipend is undisclosed, and Bengaluru hybrid attendance needs confirmation."],
+  "honeywell-intern-bachelors-embedded-eng-161642": [46, "Evidence: B.E. Computer Engineering expected May 2027 is a named related degree; C++ coursework and general software project/testing experience are relevant foundations. Gap: embedded software, firmware, microcontrollers, electronics and hardware debugging are not evidenced; graduation-year and term eligibility, stipend and attendance details are undisclosed or conflicting."],
 };
